@@ -1,0 +1,17 @@
+{
+  "allLanguages": ["en", "ca", "es"],
+  "defaultLanguage": "ca",
+  "currentPagesDir": "views",
+  "finalPagesDir": "pages",
+  "localesPath": "locales",
+  "pages": {
+    "/": ["common"],
+    "/about-us": ["common"],
+    "/about-us/future-projects": ["common"],
+    "/about-us/what-do-we-do": ["common"],
+    "/contact": ["common"],
+    "/multimedia": ["common"],
+    "/participate": ["common"],
+    "/what-is-parkour": ["common"]
+  }
+}
