@@ -6,7 +6,8 @@
     "dev": "next-translate && next dev",
     "build": "next-translate && next build",
     "start": "next start",
-    "format": "pretty-quick"
+    "format": "pretty-quick",
+    "export": "next export"
   },
   "dependencies": {
     "next": "9.1.5",
