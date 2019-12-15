@@ -53,7 +53,7 @@ export default function Header() {
       <style jsx>
         {`
           header {
-            background-color: #f9b53c;
+            background-color: #99294d;
             top: 0;
             left: 0;
             width: 100vw;
@@ -71,14 +71,14 @@ export default function Header() {
           .menu a {
             display: block;
             padding: 1.5em;
-            background-color: #f9b53c;
+            background-color: #99294d;
             transition-duration: 0.2s;
             text-decoration: none;
-            color: #212121;
+            color: #fafafa;
           }
           .menu a:hover,
           .menu li.active a {
-            background-color: #fac569;
+            background-color: #ad4264;
           }
         `}
       </style>
