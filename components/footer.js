@@ -16,7 +16,7 @@ export default function Footer() {
         {i18nConf.allLanguages
           .filter(l => l !== lang)
           .map(l => (
-            <Link href={`/${l}`}>
+            <Link key={l} href={`/${l}`}>
               <a>{l.toUpperCase()}</a>
             </Link>
           ))}

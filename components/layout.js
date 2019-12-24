@@ -22,13 +22,22 @@ export default function Layout({ children }) {
             padding: 0;
             margin: 0;
           }
+          p,
+          h1,
+          h2 {
+            margin: 20px;
+          }
+          h1 {
+            padding-top: 20px;
+          }
         `}
       </style>
       <style jsx>
         {`
           main {
             min-height: 80vh;
-            margin-top: 70px;
+            max-width: 920px;
+            margin: 70px auto 0;
           }
         `}
       </style>

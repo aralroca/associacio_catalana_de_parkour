@@ -56,6 +56,7 @@ export default function Header() {
             background-color: #99294d;
             top: 0;
             left: 0;
+            z-index: 1;
             width: 100vw;
             position: fixed;
             box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2);

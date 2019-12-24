@@ -12,6 +12,6 @@
     "/contact": ["common"],
     "/multimedia": ["common"],
     "/participate": ["common"],
-    "/what-is-parkour": ["common"]
+    "/what-is-parkour": ["common", "what-is-parkour"]
   }
 }
