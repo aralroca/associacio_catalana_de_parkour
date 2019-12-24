@@ -1,0 +1,15 @@
+webpackHotUpdate("static/development/pages/es/what-is-parkour.js",{
+
+/***/ "./locales/es/what-is-parkour.json":
+/*!*****************************************!*\
+  !*** ./locales/es/what-is-parkour.json ***!
+  \*****************************************/
+/*! exports provided: title, description, parkour-vs-freerunning-title, parkour-vs-freerunning-description, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("{\"title\":\"¿Qué es el Parkour?\",\"description\":\"<0>El parkour es una disciplina física nacida en Francia en los años 90, y consiste en entrenar la movilidad y el desplazamiento, realizando saltos y acrobacias por encima de obstáculos, generalement en un entorno urbano (pero no necesariamente), y utilizando sólo el propio cuerpo.</0><1>Esta disciplina fue desarrollada y bautizada por David Belle (hijo de militar), inspirándose en un entrenamiento militar llamado \\\"método natural\\\", creado por otro militar francés llamado George Hébert durante los años 40. Asimismo el método natural está inspirado en el estilo de vida de los indígenas africanos y de otras partes del mundo, los cuales mantienen generalmente una condición física muy buena viviendo en un entorno natural.</1><2>Así pues vemos que las raíces del parkour adentran en el estilo de vida más primitivo del ser humano, algo poco sorprendente si tenemos en cuenta que hacer parkour consiste básicamente en \\\"hacer el mono\\\" a la ciudad.</2>\",\"parkour-vs-freerunning-title\":\"¿Parkour o freerunning? ¿Cuál es la diferencia?\",\"parkour-vs-freerunning-description\":\"<0>El parkour, aparte de ser una disciplina física, tiene una filosofía detrás. Hay frases célebres dentro del mundo del parkour como etre et durer (ser y durar en francés) o etre fort pour etre util (ser fuerte para ser útil), que son ilustrativas de los valores tales como: cooperación, no competitividad, autosuperación... que están implícitos en el parkour. Otra parte importante de la filosofía del parkour es buscar la eficiencia en el movimiento, con el fin de desplazarse hacerte de un lugar a otro. Vemos pues que el parkour tiene un punto de vista práctico.</0><1>No es así en el freerunning, disciplina que también consiste en entrenar la movilidad y el desplazamiento utilizando sólo el propio cuerpo, pero que tiene un punto de vista más libre. Lo que se busca en el freerunning es la creatividad en el movimiento, la originalidad, y no tiene una filosofía detrás tanto marcada como en el parkour. Fue creado por Sebstien Foucan, un compañero de entrenamientos de en David Belle, que difundió paralelamente a éste su propio estilo de movimnt a Inglaterra.</1><2>Vemos pues que el parkour y el freerunning son dos escuelas del movimiento corporal en entornos urbanos (o naturales) con orígenes comunes, pero pero los diferentes puntos de vista resultan en dos estilos diferentes. Para hacernos una idea el freerunning incluye muchas más acrobacias, giros y piruetas, aunque también incluye muchos movimientos que se utilizan en el parkour.</2>\"}");
+
+/***/ })
+
+})
+//# sourceMappingURL=what-is-parkour.js.36afd424cbfa051d364f.hot-update.js.map
