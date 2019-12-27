@@ -95,6 +95,7 @@ export default function Header() {
             display: none;
             position: absolute;
             right: 10px;
+            cursor: pointer;
             top: 10px;
           }
 
