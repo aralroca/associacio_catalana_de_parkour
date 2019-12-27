@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import useTranslation from 'next-translate/useTranslation'
@@ -6,6 +6,7 @@ import useTranslation from 'next-translate/useTranslation'
 export default function Header() {
   const { t, lang } = useTranslation()
   const { pathname } = useRouter()
+  const [openMobileMenu, setOpenMobileMenu] = useState(false)
 
   const menu = [
     {
@@ -37,12 +38,19 @@ export default function Header() {
   return (
     <>
       <header>
-        <nav className="menu">
+        <img
+          onClick={() => setOpenMobileMenu(b => !b)}
+          className="mobile-menu"
+          width={30}
+          alt="menu"
+          src="/images/menu.svg"
+        />
+        <nav className={`menu ${openMobileMenu ? 'open' : ''}`}>
           <ul>
-            {menu.map(({ label, href, children }) => (
+            {menu.map(({ label, href }) => (
               <li className={pathname === href ? 'active' : ''} key={label}>
                 <Link href={href}>
-                  <a>{label}</a>
+                  <a onClick={() => setOpenMobileMenu(false)}>{label}</a>
                 </Link>
               </li>
             ))}
@@ -58,6 +66,7 @@ export default function Header() {
             left: 0;
             z-index: 1;
             width: 100vw;
+            height: 66px;
             position: fixed;
             box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2);
           }
@@ -80,6 +89,41 @@ export default function Header() {
           .menu a:hover,
           .menu li.active a {
             background-color: #ad4264;
+          }
+
+          .mobile-menu {
+            display: none;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+          }
+
+          @media (max-width: 940px) {
+            .menu ul {
+              display: none;
+              overflow: auto;
+              margin-top: 66px;
+              flex-direction: column;
+            }
+
+            .mobile-menu {
+              display: block;
+            }
+
+            .menu.open ul {
+              display: block;
+            }
+
+            .menu a {
+              padding: 1.2em;
+              background-color: #212121;
+              border: 1px solid #312121;
+            }
+
+            .menu a:hover,
+            .menu li.active a {
+              background-color: #312121;
+            }
           }
         `}
       </style>

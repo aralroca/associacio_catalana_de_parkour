@@ -20,6 +20,7 @@ export default function Contact() {
         {`
           .contact-box {
             max-width: 500px;
+            width: auto;
             margin: 20px auto;
             display: flex;
             align-content: center;
