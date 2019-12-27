@@ -15,11 +15,16 @@ export default function Footer() {
         {t`common:change-lang`}
         {i18nConf.allLanguages
           .filter(l => l !== lang)
-          .map(l => (
-            <Link key={l} href={`/${l}`}>
-              <a>{l.toUpperCase()}</a>
-            </Link>
-          ))}
+          .map(l => {
+            const href =
+              pathname === '/' ? `/${l}` : pathname.replace(`/${lang}`, `/${l}`)
+
+            return (
+              <Link key={l} href={href}>
+                <a>{l.toUpperCase()}</a>
+              </Link>
+            )
+          })}
       </footer>
       <style jsx>{`
       footer {

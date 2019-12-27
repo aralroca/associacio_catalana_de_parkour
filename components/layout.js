@@ -29,6 +29,7 @@ export default function Layout({ children }) {
           }
           h1 {
             padding-top: 20px;
+            border-bottom: 1px solid #111;
           }
         `}
       </style>

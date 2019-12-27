@@ -9,7 +9,7 @@
     "/about-us": ["common"],
     "/about-us/future-projects": ["common"],
     "/about-us/what-do-we-do": ["common"],
-    "/contact": ["common"],
+    "/contact": ["common", "contact"],
     "/multimedia": ["common"],
     "/participate": ["common"],
     "/what-is-parkour": ["common", "what-is-parkour"]
