@@ -6,9 +6,7 @@
   "localesPath": "locales",
   "pages": {
     "/": ["common"],
-    "/about-us": ["common"],
-    "/about-us/future-projects": ["common"],
-    "/about-us/what-do-we-do": ["common"],
+    "/about-us": ["common", "about-us"],
     "/contact": ["common", "contact"],
     "/multimedia": ["common"],
     "/participate": ["common"],

@@ -8,6 +8,26 @@ export default function AboutUs() {
   return (
     <Layout>
       <h1>{t`common:about-us`}</h1>
+      <p>{t`about-us:description`}</p>
+
+      <img loading="lazy" alt="training" src="/images/training.jpg" />
+
+      <h2>{t`about-us:what-we-do-title`}</h2>
+      <p>{t`about-us:what-we-do-description`}</p>
+
+      <img loading="lazy" alt="training" src="/images/sylcatJam.jpg" />
+
+      <h2>{t`about-us:futur-projects-title`}</h2>
+      <p>{t`about-us:futur-projects-description`}</p>
+
+      <style jsx>
+        {`
+          img {
+            display: block;
+            margin: auto;
+          }
+        `}
+      </style>
     </Layout>
   )
 }

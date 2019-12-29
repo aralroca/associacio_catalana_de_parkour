@@ -31,7 +31,7 @@ export default function Footer() {
         width: calc(100vw - 30px);
         padding: 20px;
         background-color: #212121;
-        margin 20px 0 -10px -10px;
+        margin 50px 0 -10px -10px;
         color: white;
         text-align: right;
       } 
