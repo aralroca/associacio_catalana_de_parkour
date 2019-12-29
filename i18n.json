@@ -5,11 +5,11 @@
   "finalPagesDir": "pages",
   "localesPath": "locales",
   "pages": {
-    "/": ["common"],
-    "/about-us": ["common", "about-us"],
-    "/contact": ["common", "contact"],
-    "/multimedia": ["common"],
-    "/participate": ["common"],
-    "/what-is-parkour": ["common", "what-is-parkour"]
+    "*": ["common"],
+    "/about-us": ["about-us"],
+    "/contact": ["contact"],
+    "/multimedia": [],
+    "/participate": [],
+    "/what-is-parkour": ["what-is-parkour"]
   }
 }
