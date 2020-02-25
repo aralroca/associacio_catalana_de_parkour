@@ -10,8 +10,8 @@
     "export": "next export"
   },
   "dependencies": {
-    "next": "9.2.1",
-    "next-translate": "0.7.0",
+    "next": "9.2.2",
+    "next-translate": "0.9.0",
     "react": "16.12.0",
     "react-dom": "16.12.0"
   },

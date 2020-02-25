@@ -21,14 +21,14 @@ export default function Header() {
       label: t`common:what-is-parkour`,
       href: `/${lang}/what-is-parkour`,
     },
-    {
-      label: t`common:participate`,
-      href: `/${lang}/participate`,
-    },
-    {
-      label: t`common:multimedia`,
-      href: `/${lang}/multimedia`,
-    },
+    // {
+    //   label: t`common:participate`,
+    //   href: `/${lang}/participate`,
+    // },
+    // {
+    //   label: t`common:multimedia`,
+    //   href: `/${lang}/multimedia`,
+    // },
     {
       label: t`common:contact`,
       href: `/${lang}/contact`,
