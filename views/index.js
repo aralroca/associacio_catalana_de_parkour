@@ -21,13 +21,13 @@ export default function Home() {
           >{t`common:what-is-parkour`}</a>
         </Link>
 
-        <Link href={`/${lang}/participate`}>
+        {/* <Link href={`/${lang}/participate`}>
           <a style={{ backgroundColor: '#ef6c00' }}>{t`common:participate`}</a>
-        </Link>
+        </Link> */}
 
-        <Link href={`/${lang}/multimedia`}>
+        {/* <Link href={`/${lang}/multimedia`}>
           <a style={{ backgroundColor: '#795548' }}>{t`common:multimedia`}</a>
-        </Link>
+        </Link> */}
 
         <Link href={`/${lang}/contact`}>
           <a style={{ backgroundColor: '#673ab7' }}>{t`common:contact`}</a>
