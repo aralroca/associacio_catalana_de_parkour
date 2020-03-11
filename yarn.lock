@@ -3895,9 +3895,9 @@ minimist@0.0.8:
   integrity sha1-hX/Kv8M5fSYluCKCYuhqp6ARsF0=
 
 minimist@^1.2.0:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.3.tgz#3db5c0765545ab8637be71f333a104a965a9ca3f"
-  integrity sha512-+bMdgqjMN/Z77a6NlY/I3U5LlRDbnmaAk6lDveAPKwSpcPM4tKAuYsvYF8xjhOPXhOYGe/73vVLVez5PW+jqhw==
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.4.tgz#40357ef9582f8cd42ba8eaa274ddcf27f0c979b7"
+  integrity sha512-wTiNDqe4D2rbTJGZk1qcdZgFtY0/r+iuE6GDT7V0/+Gu5MLpIDm4+CssDECR79OJs/OxLPXMzdxy153b5Qy3hg==
 
 minipass@^2.6.0, minipass@^2.8.6, minipass@^2.9.0:
   version "2.9.0"
@@ -4041,10 +4041,10 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-next-translate@0.10.2:
-  version "0.10.2"
-  resolved "https://registry.yarnpkg.com/next-translate/-/next-translate-0.10.2.tgz#29a4bba2e64d5def39a24a7293ed6c33649335aa"
-  integrity sha512-WRcwDFieV2SjsNbKLhVv3vmJXOmM0HB2CNe41p1E8uBMo6Oy9zn/jiM1jE7fPPzz1LqbkDpdcVEKe0xtnnC5Dg==
+next-translate@0.10.5:
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/next-translate/-/next-translate-0.10.5.tgz#9b51d9ce581fb01aebb014eb0e807a9013f99343"
+  integrity sha512-tZ44sNKeYmXZUJCETCdS6vfIKocToaEixardDSXDlgbXo5KwSk+m6zzZvtBq4xYv8wikpNFYxQaPvzQw3fYmhg==
 
 next@9.3.0:
   version "9.3.0"
@@ -5065,10 +5065,10 @@ preact-render-to-string@5.1.4:
   dependencies:
     pretty-format "^3.8.0"
 
-preact@10.3.3:
-  version "10.3.3"
-  resolved "https://registry.yarnpkg.com/preact/-/preact-10.3.3.tgz#31a949cdc89dd1cf72bc2b94f80ad55d1ac8c7e6"
-  integrity sha512-8EWUuHuLhX48uK0acnnXwBL/ZyrgeadnyhxG6hFI85BhwmquyGwWzfj2SylCNdEyltkdgbY3FZzQOM2mG1leAg==
+preact@10.3.4:
+  version "10.3.4"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.3.4.tgz#e1542a4d3eba3e7a37f312a2c331231b97052024"
+  integrity sha512-wMgzs/RGYf0I1PZf8ZFJdyU/3kCcwepJyVYe+N9FGajyQWarMoPrPfrQajcG0psPj6ySYv2cSuLYFCihvV/Qrw==
 
 prepend-http@^1.0.0:
   version "1.0.4"
