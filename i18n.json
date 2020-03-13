@@ -3,6 +3,7 @@
   "defaultLanguage": "ca",
   "currentPagesDir": "views",
   "finalPagesDir": "pages",
+  "redirectToDefaultLang": true,
   "localesPath": "locales",
   "pages": {
     "*": ["common"],
