@@ -807,7 +807,7 @@ var e,t=(e=__webpack_require__(/*! querystring */ "./node_modules/querystring-es
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-var _interopRequireWildcard=__webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js"),_interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");Object.defineProperty(exports,"__esModule",{value:!0}),exports["default"]=I18nProvider;var _slicedToArray2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js")),_defineProperty2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js")),_react=_interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.module.js")),_context=_interopRequireDefault(__webpack_require__(/*! ./_context */ "./node_modules/next-translate/_context.js")),__jsx=_react["default"].createElement;function ownKeys(a,b){var c=Object.keys(a);if(Object.getOwnPropertySymbols){var d=Object.getOwnPropertySymbols(a);b&&(d=d.filter(function(b){return Object.getOwnPropertyDescriptor(a,b).enumerable})),c.push.apply(c,d)}return c}function _objectSpread(a){for(var b,c=1;c<arguments.length;c++)b=null==arguments[c]?{}:arguments[c],c%2?ownKeys(Object(b),!0).forEach(function(c){(0,_defineProperty2["default"])(a,c,b[c])}):Object.getOwnPropertyDescriptors?Object.defineProperties(a,Object.getOwnPropertyDescriptors(b)):ownKeys(Object(b)).forEach(function(c){Object.defineProperty(a,c,Object.getOwnPropertyDescriptor(b,c))});return a}var NsContext=(0,_react.createContext)({});function getDicValue(a){var b=1<arguments.length&&arguments[1]!==void 0?arguments[1]:"",c=b.split(".").reduce(function(a,b){return a[b]},a);return"string"==typeof c?c:void 0}function plural(a,b,c){if(!c||"number"!=typeof c.count)return b;var d="".concat(b,"_").concat(c.count);if(getDicValue(a,d)!==void 0)return d;var e="".concat(b,"_plural");return 1<c.count&&void 0!==getDicValue(a,e)?e:b}function interpolation(a,b){return a&&b?Object.keys(b).reduce(function(a,c){var d=new RegExp("{{\\s*".concat(c,"\\s*}}"),"gm");return a=a.replace(d,"".concat(b[c])),a},a):a||""}function I18nProvider(a){var b=a.lang,c=a.namespaces,d=void 0===c?{}:c,e=a.children,f=(0,_react.useContext)(NsContext),g=_objectSpread({},f,{},d);return __jsx(_context["default"].Provider,{value:{lang:b,t:function(){var a=0<arguments.length&&arguments[0]!==void 0?arguments[0]:"",b=1<arguments.length?arguments[1]:void 0,c=Array.isArray(a)?a[0]:a,d=c.split(":"),e=(0,_slicedToArray2["default"])(d,2),f=e[0],h=e[1],i=g[f]||{},j=plural(i,h,b),k=getDicValue(i,j);return interpolation(k,b)||c}}},__jsx(NsContext.Provider,{value:g},e))}
+var _interopRequireWildcard=__webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js"),_interopRequireDefault=__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");Object.defineProperty(exports,"__esModule",{value:!0}),exports["default"]=I18nProvider;var _slicedToArray2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "./node_modules/@babel/runtime/helpers/slicedToArray.js")),_defineProperty2=_interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "./node_modules/@babel/runtime/helpers/defineProperty.js")),_react=_interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.module.js")),_context=_interopRequireDefault(__webpack_require__(/*! ./_context */ "./node_modules/next-translate/_context.js")),_internals=__webpack_require__(/*! ./_helpers/_internals */ "./node_modules/next-translate/_helpers/_internals.js"),__jsx=_react["default"].createElement;function ownKeys(a,b){var c=Object.keys(a);if(Object.getOwnPropertySymbols){var d=Object.getOwnPropertySymbols(a);b&&(d=d.filter(function(b){return Object.getOwnPropertyDescriptor(a,b).enumerable})),c.push.apply(c,d)}return c}function _objectSpread(a){for(var b,c=1;c<arguments.length;c++)b=null==arguments[c]?{}:arguments[c],c%2?ownKeys(Object(b),!0).forEach(function(c){(0,_defineProperty2["default"])(a,c,b[c])}):Object.getOwnPropertyDescriptors?Object.defineProperties(a,Object.getOwnPropertyDescriptors(b)):ownKeys(Object(b)).forEach(function(c){Object.defineProperty(a,c,Object.getOwnPropertyDescriptor(b,c))});return a}var NsContext=(0,_react.createContext)({});function getDicValue(a){var b=1<arguments.length&&arguments[1]!==void 0?arguments[1]:"",c=b.split(".").reduce(function(a,b){return a[b]},a);return"string"==typeof c?c:void 0}function plural(a,b,c){if(!c||"number"!=typeof c.count)return b;var d="".concat(b,"_").concat(c.count);if(getDicValue(a,d)!==void 0)return d;var e="".concat(b,"_plural");return 1<c.count&&void 0!==getDicValue(a,e)?e:b}function interpolation(a,b){return a&&b?Object.keys(b).reduce(function(a,c){var d=new RegExp("{{\\s*".concat(c,"\\s*}}"),"gm");return a=a.replace(d,"".concat(b[c])),a},a):a||""}function I18nProvider(a){var b=a.lang,c=a.namespaces,d=void 0===c?{}:c,e=a.children,f=a.isStaticMode,g=(0,_react.useContext)(NsContext),h=_objectSpread({},g,{},d);return(0,_internals.setInternals)({lang:b,isStaticMode:f}),__jsx(_context["default"].Provider,{value:{lang:b,t:function(){var a=0<arguments.length&&void 0!==arguments[0]?arguments[0]:"",b=1<arguments.length?arguments[1]:void 0,c=Array.isArray(a)?a[0]:a,d=c.split(":"),e=(0,_slicedToArray2["default"])(d,2),f=e[0],g=e[1],i=h[f]||{},j=plural(i,g,b),k=getDicValue(i,j);return interpolation(k,b)||c}}},__jsx(NsContext.Provider,{value:h},e))}
 
 /***/ }),
 
@@ -820,6 +820,18 @@ var _interopRequireWildcard=__webpack_require__(/*! @babel/runtime/helpers/inter
 
 "use strict";
 Object.defineProperty(exports,"__esModule",{value:!0}),exports["default"]=void 0;var _react=__webpack_require__(/*! react */ "./node_modules/react/index.module.js"),_default=(0,_react.createContext)({t:function t(a){return Array.isArray(a)?a[0]:a},lang:""});exports["default"]=_default;
+
+/***/ }),
+
+/***/ "./node_modules/next-translate/_helpers/_internals.js":
+/*!************************************************************!*\
+  !*** ./node_modules/next-translate/_helpers/_internals.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(exports,"__esModule",{value:!0}),exports["default"]=exports.setInternals=void 0;var i={},setInternals=function(a){i.lang=a.lang,i.isStaticMode=a.isStaticMode};exports.setInternals=setInternals;var _default=i;exports["default"]=_default;
 
 /***/ }),
 
@@ -6714,6 +6726,7 @@ function Page(p) {
   return __jsx(next_translate_I18nProvider__WEBPACK_IMPORTED_MODULE_2___default.a, {
     lang: "ca",
     namespaces: namespaces,
+    isStaticMode: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
@@ -6884,7 +6897,7 @@ function Home() {
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fca&absolutePagePath=%2FUsers%2Faroca%2Fparkourcat%2Fpages%2Fca%2Findex.js ***!
   \************************************************************************************************************************/
@@ -6907,5 +6920,5 @@ module.exports = dll_4764cd96e824d346c68d;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=ca.js.map
