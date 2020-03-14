@@ -4041,10 +4041,10 @@ next-tick@~1.0.0:
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
   integrity sha1-yobR/ogoFpsBICCOPchCS524NCw=
 
-next-translate@0.11.0-canary.2:
-  version "0.11.0-canary.2"
-  resolved "https://registry.yarnpkg.com/next-translate/-/next-translate-0.11.0-canary.2.tgz#8841193b543d7eb8c7b9703846962ad390f6bdba"
-  integrity sha512-Ex++Y4nbHac2IY8mzK83RTD02ThUS33G8kXoobakC0yMgwSQzqbZEk0A0z5su5uw480+NgPB5NqpINrG7FQrLg==
+next-translate@0.11.0-canary.3:
+  version "0.11.0-canary.3"
+  resolved "https://registry.yarnpkg.com/next-translate/-/next-translate-0.11.0-canary.3.tgz#7bad49e734dc18e78826a630bb8f0df66a6f8e3a"
+  integrity sha512-0d0BubSFxBAC4rwTtVIDmGqJp4glR5DFCeTEkIpnMezqNDRACIIKijQoWBhfTTTQeJg9lhDsUSX13GioairFbg==
 
 next@9.3.0:
   version "9.3.0"

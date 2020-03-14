@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "next": "9.3.0",
-    "next-translate": "0.11.0-canary.2",
+    "next-translate": "0.11.0-canary.3",
     "preact": "10.3.4",
     "preact-render-to-string": "5.1.4",
     "react": "github:preact-compat/react#1.0.0",
