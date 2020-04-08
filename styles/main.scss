@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  overflow-x: hidden;
+  min-height: 80vh;
+  max-width: 920px;
+  margin: 70px auto 0;
+}
+
+p,
+h1,
+h2 {
+  margin: 20px;
+}
+h1 {
+  padding-top: 20px;
+  border-bottom: 1px solid #111;
+}
+
+footer {
+  width: calc(100vw - 30px);
+  padding: 20px;
+  background-color: #212121;
+  margin: 50px 0 -10px -10px;
+  color: white;
+  text-align: right;
+}
+
+footer a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+header {
+  background-color: #99294d;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 66px;
+  position: fixed;
+  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2);
+}
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.menu a {
+  display: block;
+  padding: 1.5em;
+  background-color: #99294d;
+  transition-duration: 0.2s;
+  text-decoration: none;
+  color: #fafafa;
+}
+.menu a:hover,
+.menu li.active a {
+  background-color: #ad4264;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  top: 10px;
+}
+
+@media (max-width: 940px) {
+  .menu ul {
+    display: none;
+    overflow: auto;
+    margin-top: 66px;
+    flex-direction: column;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .menu.open ul {
+    display: block;
+  }
+
+  .menu a {
+    padding: 1.2em;
+    background-color: #212121;
+    border: 1px solid #312121;
+  }
+
+  .menu a:hover,
+  .menu li.active a {
+    background-color: #312121;
+  }
+}
+
+.home-menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-menu a {
+  padding: 50px;
+  margin: 20px;
+  font-size: 20px;
+  width: 300px;
+  color: white;
+  border-radius: 2px;
+  text-decoration: none;
+  -webkit-box-shadow: 2px 2px 10px 0px rgba(102, 102, 102, 0.5);
+  -moz-box-shadow: 2px 2px 10px 0px rgba(102, 102, 102, 0.5);
+  box-shadow: 2px 2px 10px 0px rgba(102, 102, 102, 0.5);
+}
+
+.training-img {
+  display: block;
+  margin: auto;
+}
+
+.contact-box {
+  max-width: 500px;
+  width: auto;
+  margin: 20px auto;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 10px 0 hsla(0, 0%, 40%, 0.5);
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid #a6a7a9;
+  padding: 10px;
+  min-height: 100px;
+}
+
+.contact-box img {
+  width: 80px;
+}
+
+iframe {
+  width: 70%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  margin-left: 15%;
+}
+.iframe-box {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  padding-top: 46%;
+  margin: 20px;
+}

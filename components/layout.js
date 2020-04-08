@@ -1,9 +1,16 @@
 import React from 'react'
 import Head from 'next/head'
 import useTranslation from 'next-translate/useTranslation'
+import { motion } from 'framer-motion'
 
 import Header from '../components/header'
 import Footer from '../components/footer'
+
+const main = {
+  minHeight: '80vh',
+  maxWidth: '920px',
+  margin: '70px auto 0',
+}
 
 export default function Layout({ children }) {
   const { t } = useTranslation()
@@ -15,33 +22,15 @@ export default function Layout({ children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main>{children}</main>
-      <style jsx global>
-        {`
-          * {
-            padding: 0;
-            margin: 0;
-          }
-          p,
-          h1,
-          h2 {
-            margin: 20px;
-          }
-          h1 {
-            padding-top: 20px;
-            border-bottom: 1px solid #111;
-          }
-        `}
-      </style>
-      <style jsx>
-        {`
-          main {
-            min-height: 80vh;
-            max-width: 920px;
-            margin: 70px auto 0;
-          }
-        `}
-      </style>
+      <motion.main
+        style={main}
+        initial="exit"
+        animate="enter"
+        exit="exit"
+        variants={{ enter: { transition: { staggerChildren: 0.1 } } }}
+      >
+        {children}
+      </motion.main>
       <Footer />
     </>
   )

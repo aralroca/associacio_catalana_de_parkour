@@ -1,43 +1,23 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import Layout from '../../components/layout'
 import useTranslation from 'next-translate/useTranslation'
 import Trans from 'next-translate/Trans'
+import animation from '../../utils/animation'
 
 export default function Contact() {
   const { t } = useTranslation()
 
   return (
     <Layout>
-      <h1>{t`contact:title`}</h1>
-      <div className="contact-box">
+      <motion.h1 variants={animation}>{t`contact:title`}</motion.h1>
+      <motion.div variants={animation} className="contact-box">
         <img alt="contact" src="/images/contact.svg" />
         <Trans
           i18nKey="contact:description"
           components={[<p />, <strong />, <a href="mailto:consell@acpk.cat" />]}
         />
-      </div>
-      <style jsx>
-        {`
-          .contact-box {
-            max-width: 500px;
-            width: auto;
-            margin: 20px auto;
-            display: flex;
-            align-content: center;
-            justify-content: space-between;
-            box-shadow: 2px 2px 10px 0 hsla(0, 0%, 40%, 0.5);
-            background-color: #fff;
-            border-radius: 2px;
-            border: 1px solid #a6a7a9;
-            padding: 10px;
-            min-height: 100px;
-          }
-
-          .contact-box img {
-            width: 80px;
-          }
-        `}
-      </style>
+      </motion.div>
     </Layout>
   )
 }
