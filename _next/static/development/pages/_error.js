@@ -267,7 +267,7 @@ function unique() {
 }
 /**
  *
- * @param headElement List of multiple <Head> instances
+ * @param headElements List of multiple <Head> instances
  */
 
 
@@ -446,9 +446,19 @@ var statusCodes = {
   405: 'Method Not Allowed',
   500: 'Internal Server Error'
 };
+
+function _getInitialProps(_ref) {
+  var res = _ref.res,
+      err = _ref.err;
+  var statusCode = res && res.statusCode ? res.statusCode : err ? err.statusCode : 404;
+  return {
+    statusCode: statusCode
+  };
+}
 /**
 * `Error` component used for handling errors.
 */
+
 
 var Error = /*#__PURE__*/function (_react$default$Compon) {
   _inherits(Error, _react$default$Compon);
@@ -478,16 +488,6 @@ var Error = /*#__PURE__*/function (_react$default$Compon) {
         style: styles.h2
       }, title, "."))));
     }
-  }], [{
-    key: "getInitialProps",
-    value: function getInitialProps(_ref) {
-      var res = _ref.res,
-          err = _ref.err;
-      var statusCode = res && res.statusCode ? res.statusCode : err ? err.statusCode : 404;
-      return {
-        statusCode: statusCode
-      };
-    }
   }]);
 
   return Error;
@@ -495,6 +495,8 @@ var Error = /*#__PURE__*/function (_react$default$Compon) {
 
 exports["default"] = Error;
 Error.displayName = 'ErrorPage';
+Error.getInitialProps = _getInitialProps;
+Error.origGetInitialProps = _getInitialProps;
 var styles = {
   error: {
     color: '#000',
@@ -805,23 +807,23 @@ module.exports = _typeof;
 
 /***/ "./node_modules/react/index.module.js":
 /*!**************************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.module.js from dll-reference dll_4764cd96e824d346c68d ***!
+  !*** delegated ./node_modules/react/index.module.js from dll-reference dll_531d882dfd16c98a7bad ***!
   \**************************************************************************************************/
 /*! exports provided: useState, useReducer, useEffect, useLayoutEffect, useRef, useImperativeHandle, useMemo, useCallback, useContext, useDebugValue, useErrorBoundary, createElement, createContext, createRef, Fragment, Component, version, Children, render, hydrate, unmountComponentAtNode, createPortal, createFactory, cloneElement, isValidElement, findDOMNode, PureComponent, memo, forwardRef, unstable_batchedUpdates, Suspense, SuspenseList, lazy, default */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_4764cd96e824d346c68d */ "dll-reference dll_4764cd96e824d346c68d"))("./node_modules/react/index.module.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_531d882dfd16c98a7bad */ "dll-reference dll_531d882dfd16c98a7bad"))("./node_modules/react/index.module.js");
 
 /***/ }),
 
-/***/ "dll-reference dll_4764cd96e824d346c68d":
+/***/ "dll-reference dll_531d882dfd16c98a7bad":
 /*!*******************************************!*\
-  !*** external "dll_4764cd96e824d346c68d" ***!
+  !*** external "dll_531d882dfd16c98a7bad" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_4764cd96e824d346c68d;
+module.exports = dll_531d882dfd16c98a7bad;
 
 /***/ })
 
