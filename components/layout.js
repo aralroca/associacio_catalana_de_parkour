@@ -6,12 +6,6 @@ import { motion } from 'framer-motion'
 import Header from '../components/header'
 import Footer from '../components/footer'
 
-const main = {
-  minHeight: '80vh',
-  maxWidth: '920px',
-  margin: '70px auto 0',
-}
-
 export default function Layout({ children }) {
   const { t } = useTranslation()
 
@@ -23,7 +17,6 @@ export default function Layout({ children }) {
       </Head>
       <Header />
       <motion.main
-        style={main}
         initial="exit"
         animate="enter"
         exit="exit"
