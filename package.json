@@ -10,19 +10,18 @@
     "export": "next export"
   },
   "dependencies": {
-    "framer-motion": "1.10.3",
-    "next": "9.3.4",
-    "next-translate": "0.15.1",
-    "preact": "10.4.0",
-    "preact-render-to-string": "5.1.5",
+    "next": "9.4.2",
+    "next-translate": "0.17.0-canary.1",
+    "preact": "10.4.4",
+    "preact-render-to-string": "5.1.8",
     "react": "github:preact-compat/react#1.0.0",
     "react-dom": "github:preact-compat/react-dom#1.0.0",
     "react-ssr-prepass": "npm:preact-ssr-prepass@1.0.1",
-    "sass": "1.26.3"
+    "sass": "1.26.5"
   },
   "devDependencies": {
-    "husky": "4.2.3",
-    "prettier": "2.0.4",
+    "husky": "4.2.5",
+    "prettier": "2.0.5",
     "pretty-quick": "2.0.1"
   },
   "husky": {

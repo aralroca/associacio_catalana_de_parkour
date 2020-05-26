@@ -1,43 +1,33 @@
 import React from 'react'
 import useTranslation from 'next-translate/useTranslation'
-import { motion } from 'framer-motion'
 import Layout from '../../components/layout'
-import animation from '../../utils/animation'
 
 export default function AboutUs() {
   const { t } = useTranslation()
 
   return (
     <Layout>
-      <motion.h1 variants={animation}>{t`common:about-us`}</motion.h1>
-      <motion.p variants={animation}>{t`about-us:description`}</motion.p>
+      <h1>{t`common:about-us`}</h1>
+      <p>{t`about-us:description`}</p>
 
-      <motion.img
-        variants={animation}
+      <img
         className="training-img"
         loading="lazy"
         alt="training"
         src="/images/training.jpg"
       />
 
-      <motion.h2 variants={animation}>{t`about-us:what-we-do-title`}</motion.h2>
-      <motion.p
-        variants={animation}
-      >{t`about-us:what-we-do-description`}</motion.p>
+      <h2>{t`about-us:what-we-do-title`}</h2>
+      <p>{t`about-us:what-we-do-description`}</p>
 
-      <motion.img
-        variants={animation}
+      <img
         className="training-img"
         loading="lazy"
         alt="training"
         src="/images/sylcatJam.jpg"
       />
-      <motion.h2
-        variants={animation}
-      >{t`about-us:futur-projects-title`}</motion.h2>
-      <motion.p
-        variants={animation}
-      >{t`about-us:futur-projects-description`}</motion.p>
+      <h2>{t`about-us:futur-projects-title`}</h2>
+      <p>{t`about-us:futur-projects-description`}</p>
     </Layout>
   )
 }

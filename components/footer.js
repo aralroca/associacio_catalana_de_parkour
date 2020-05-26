@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from 'next/link'
+import Link from 'next-translate/Link'
 import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router'
 
@@ -15,11 +15,10 @@ export default function Footer() {
       {i18nConf.allLanguages
         .filter((l) => l !== lang)
         .map((l) => {
-          const href =
-            pathname === '/' ? `/${l}` : pathname.replace(`/${lang}`, `/${l}`)
+          const href = pathname.replace(`/${lang}`, '') || '/'
 
           return (
-            <Link key={l} href={href}>
+            <Link key={l} lang={l} href={href}>
               <a>{l.toUpperCase()}</a>
             </Link>
           )
