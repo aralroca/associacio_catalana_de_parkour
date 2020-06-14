@@ -10,14 +10,14 @@
     "export": "next export"
   },
   "dependencies": {
-    "next": "9.4.2",
-    "next-translate": "0.17.0-canary.1",
+    "next": "9.4.4",
+    "next-translate": "0.17.1",
     "preact": "10.4.4",
-    "preact-render-to-string": "5.1.8",
+    "preact-render-to-string": "5.1.9",
     "react": "github:preact-compat/react#1.0.0",
     "react-dom": "github:preact-compat/react-dom#1.0.0",
     "react-ssr-prepass": "npm:preact-ssr-prepass@1.0.1",
-    "sass": "1.26.5"
+    "sass": "1.26.8"
   },
   "devDependencies": {
     "husky": "4.2.5",
