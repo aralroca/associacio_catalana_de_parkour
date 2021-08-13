@@ -10,7 +10,7 @@
     "export": "next export"
   },
   "dependencies": {
-    "next": "9.4.4",
+    "next": "11.1.0",
     "next-translate": "0.17.1",
     "preact": "10.4.4",
     "preact-render-to-string": "5.1.9",
